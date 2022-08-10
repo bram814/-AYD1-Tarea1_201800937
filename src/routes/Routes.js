@@ -24,5 +24,13 @@ router.post('/Calculadora-201800937', async(req, res) =>{
     });
 })
 
+router.get('/info-201800937', async (req, res)=>{
+
+    res.status(200).json({
+        Nombre:"José Abraham Solórzano Herrera",
+        Carnet:"201800937"
+    });
+
+});
 
 module.exports = router;
