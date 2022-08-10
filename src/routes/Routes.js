@@ -33,4 +33,17 @@ router.get('/info-201800937', async (req, res)=>{
 
 });
 
+router.post('/info-201800937', async(req, res) =>{
+
+    var num1 = req.body.num1;
+    var num2 = req.body.num2;
+    
+    res.status(200).json({
+        numero1:num1,
+        numero2:num2,
+        suma:num1-num2
+
+    });
+});
+
 module.exports = router;
